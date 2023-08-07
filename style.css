@@ -1,0 +1,155 @@
+/* colors:
+  dark green #283618
+  sand #dda15e
+  sand hover #bc6c25
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.main-right {
+  padding: 50px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right h1 {
+  align-self: center;
+  font-size: 700;
+  color: #283618;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.main-right p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.img-container {
+  background-color: #dda15e;
+  background-image: url("images/frame.png");
+  background-size: cover;
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+margin: 25px;
+font-size: 50px;
+color: #283618;
+}
+
+.icon:hover {
+  color: #bc6c25;
+}
+
+.button {
+  background-color: #283618;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #bc6c25;
+}
+
+.button-text {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.container-mobile {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: row wrap;
+}
+
+
+@media (max-width: 720px) {
+  .container {
+    display: none;
+  }
+  .container-mobile {
+    width: 300px;
+    display: block;
+  }
+  .img-container {
+    width: 200px;
+    height: 300px;
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-mobile {
+    width: 300px;
+    display: block;
+  }
+  .img-container {
+    width: 200px;
+    height: 300px;
+    display: block;
+  }
+
+}
